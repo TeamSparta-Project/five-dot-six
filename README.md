@@ -108,10 +108,6 @@ Communication
     <th>Prettier</th>
     <th>Moudle css</th>
     <th>Zustand</th>
-    <th>Livekit</th>
-    <th>Socket.io</th>
-    <th>Express</th>
-    <th>AWS</th>
   </tr>
   <tr>
     <td width="100" height="100">
@@ -119,9 +115,11 @@ Communication
         &nbsp;&nbsp;<img src="https://github.com/sparta-advancedProject-team10/HappyMungLife/assets/116704646/ca3b35d4-25bf-4038-9a33-2daf9e6c5ade" alt="icon" width="50" height="50" style="text-align:center" />
       </div>
     </td>
-       <td width="100" height="100">
- <div style="display: flex; align-items: flex-start;">&nbsp;<img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" /></div>
-    </td>
+    <td width="100" height="100">
+       <div style="display: flex; align-items: flex-start;">
+         <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="80" height="80" />
+       </div>
+     </td>
      <td width="100" height="100">
       <div style="display: flex; align-items: center;">
         &nbsp;
@@ -135,16 +133,31 @@ Communication
     </td>
     <td width="100" height="100">
       <div style="display: flex; align-items: center;">
+          &nbsp;
         <img src="https://github.com/ice-craft/ice-craft/assets/116704646/248b37f6-b404-42fd-8e4a-2ea1ab4a53d1" alt="icon" width="60" height="60" />
       </div>     
     </td>
     <td width="100" height="100">
       <div style="display: flex; align-items: center;">
+        &nbsp;
         <img src="https://github.com/ice-craft/ice-craft/assets/116704646/c519f7e9-ae7a-4749-a849-97a836428a05" alt="icon" width="60" height="60" />
       </div>     
     </td>
+  </tr>
+</table>
+
+<br>
+<table>
+  <tr>
+    <th>Livekit</th>
+    <th>Socket.io</th>
+    <th>Express</th>
+    <th>AWS</th>
+  </tr>
+  <tr>
     <td width="100" height="100">
       <div style="display: flex; align-items: center;">
+        &nbsp;
         <img src="https://github.com/ice-craft/ice-craft/assets/116704646/8d33be75-ce12-495c-8a19-03d4913e7578" alt="icon" width="60" height="60" />
       </div>     
     </td>
@@ -156,6 +169,7 @@ Communication
     </td>
     <td width="100" height="100">
       <div style="display: flex; align-items: center;">
+        &nbsp;
         <img src="https://github.com/ice-craft/ice-craft/assets/116704646/c57e63a4-2d75-4579-8ae2-4622f25d516d" alt="icon" width="60" height="60" />
       </div>     
     </td>
