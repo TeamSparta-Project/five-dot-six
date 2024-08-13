@@ -346,26 +346,35 @@ Communication
   </tr>
   <tr>
     <td>랭킹 페이지</td>
-    <td>이미지</td>
-    <td>설명</td>
-  </tr>
-  <tr>
-    <td>마피아 게임 페이지</td>
-    <td>이미지</td>
+    <td>
+       <img src="https://github.com/user-attachments/assets/a2916a58-7dd8-4cd5-af9b-30b6845bec36" alt="ranking page">
+    </td>
     <td>설명</td>
   </tr>
   <tr>
     <td>마피아 설명 페이지</td>
-    <td>이미지</td>
+    <td>
+       <img src="https://github.com/user-attachments/assets/4a46b2b2-6c48-4c38-8c7d-0f610d686be4" alt="mafia info page">
+    </td>
     <td>설명</td>
   </tr>
   <tr>
     <td>QnA 페이지</td>
-    <td>이미지</td>
+    <td>
+         <img src="https://github.com/user-attachments/assets/940a7d25-db2e-4bd3-87c2-ff0ba8fc5f3a" alt="qna page">
+    </td>
     <td>설명</td>
   </tr>
   <tr>
     <td>not-found 페이지</td>
+    <td>
+         <img src="https://github.com/user-attachments/assets/0e4aae62-8f0f-4561-b9f2-b58b1a2a0c32" alt="not-found page">
+         <img src="https://github.com/user-attachments/assets/129e3b04-9c9b-4ef6-8be5-673fa05eb11b" alt="not-found page">
+    </td>
+    <td>설명</td>
+  </tr>
+    <tr>
+    <td>마피아 게임 페이지</td>
     <td>이미지</td>
     <td>설명</td>
   </tr>
