@@ -162,7 +162,7 @@ Communication
 
 
 
-## 기능 소개
+## 역할 소개
 
 <table>
   <tr>
@@ -176,7 +176,7 @@ Communication
     <td align="center">
       <br>
       <strong><em>** 메인 페이지 **</em></strong> <br>
-      socket.io 양방향 통신 구현 <br>
+      socket.io 양방향 통신 구현, 실시간 방 리스트 정보 구현<br>
       Swiper - 슬라이드 추가 <br>
       Skeleton - 로딩페이지 구현 <br>
       Typebot - Typebot 추가 <br>
@@ -281,20 +281,87 @@ Communication
 
 <br>
 <br>
+<br>
 
+## 기능 미리보기
 
+<table>
+  <tr>
+    <th>페이지 명</th>
+    <th>페이지 및 기능</th>
+    <th>설명</th>
+  </tr>
+  <tr>
+    <td>Intro</td>
+    <td>이미지</td>
+    <td>
+      - video 삽입 <br>
+      - TextTyping으로 UX경험 향상 <br>
+      - video 로딩 전 이미지 삽입 <br>
+    </td>
+  </tr>
+  <tr>
+    <td>메인 페이지</td>
+    <td>이미지</td>
+    <td>
+      - 방 리스트 검색 <br>
+      - GoTopButton 페이지 최상단 이동 <br>
+      - TypeBot : IceCraft에 대한 QnA설명 <br>
+      - Loading UI : 방 입장 전 loading UI <br>
+      - 실시간 방 리스트 : 양방향 통신으로 실시간 방 정보 <br>
+      - 공지사항 모달 : 하루 창 닫기 모달
+    </td>
+  </tr>
+  <tr>
+    <td>로그인 페이지</td>
+    <td>이미지</td>
+    <td>설명</td>
+  </tr>
+  <tr>
+    <td>회원가입 페이지</td>
+    <td>이미지</td>
+    <td>설명</td>
+  </tr>
+  <tr>
+    <td>랭킹 페이지</td>
+    <td>이미지</td>
+    <td>설명</td>
+  </tr>
+  <tr>
+    <td>마피아 게임 페이지</td>
+    <td>이미지</td>
+    <td>설명</td>
+  </tr>
+  <tr>
+    <td>마피아 설명 페이지</td>
+    <td>이미지</td>
+    <td>설명</td>
+  </tr>
+  <tr>
+    <td>QnA 페이지</td>
+    <td>이미지</td>
+    <td>설명</td>
+  </tr>
+  <tr>
+    <td>not-found 페이지</td>
+    <td>이미지</td>
+    <td>설명</td>
+  </tr>
+</table>
 
-
-
+<br>
+<br>
+<br>
 
 ##  파일구조
-
 ```
 📦 
 ├─ .github
 │  ├─ ISSUE_TEMPLATE
 │  │  └─ custom.md
-│  └─ pull_request_template.md
+│  ├─ pull_request_template.md
+│  └─ workflows
+│     └─ deploy.yml
 ├─ .gitignore
 ├─ .prettierrc
 ├─ .vscode
@@ -349,6 +416,7 @@ Communication
 │     ├─ citizens_ToolTip_text.svg
 │     ├─ doctor_ToolTip_Icon.svg
 │     ├─ doctor_ToolTip_text.svg
+│     ├─ error_page.avif
 │     ├─ footer_logo.svg
 │     ├─ game_choice_mafia.svg
 │     ├─ game_choice_mafia_active.svg
@@ -386,6 +454,7 @@ Communication
 │     ├─ mafia_room_bg.avif
 │     ├─ mafia_victory.svg
 │     ├─ mafia_visual.avif
+│     ├─ media_error.svg
 │     ├─ modal_bg.svg
 │     ├─ moon.svg
 │     ├─ player_die.svg
@@ -399,8 +468,10 @@ Communication
 │     ├─ ranking_empty.svg
 │     ├─ song_game_title.svg
 │     ├─ song_visual.avif
+│     ├─ sorry_image.avif
 │     ├─ sun.svg
 │     └─ visit_empty.svg
+├─ build.sh
 ├─ components
 │  ├─ layout
 │  │  ├─ Footer.tsx
@@ -421,6 +492,9 @@ Communication
 │  │  ├─ RemoteParticipantTile.tsx
 │  │  ├─ RenderCards.tsx
 │  │  └─ SpeakTimer.tsx
+│  ├─ mafiaInfo
+│  │  ├─ InfoItem.tsx
+│  │  └─ InfoTitle.tsx
 │  ├─ main
 │  │  ├─ CreateRoomModal.tsx
 │  │  ├─ MainCreateRoom.tsx
@@ -502,6 +576,7 @@ Communication
 │  ├─ CommonsLoading.tsx
 │  ├─ FormSearch.tsx
 │  ├─ GoTopButton.tsx
+│  ├─ GoogleTracker.tsx
 │  ├─ InfoChat.tsx
 │  ├─ ModalConfetti.tsx
 │  ├─ ModalProgress.tsx
@@ -526,103 +601,3 @@ Communication
 │     └─ server.ts
 └─ yarn.lock
 ```
-
-<!--
-📦app
- ┣ 📂auth
- ┃ ┗ 📂callback
- ┃ ┃ ┗ 📜route.ts
- ┣ 📂community
- ┃ ┣ 📂detail
- ┃ ┃ ┗ 📂[id]
- ┃ ┃ ┃ ┣ 📂edit
- ┃ ┃ ┃ ┃ ┗ 📜page.tsx
- ┃ ┃ ┃ ┗ 📜page.tsx
- ┃ ┣ 📂post
- ┃ ┃ ┗ 📜page.tsx
- ┃ ┗ 📜page.tsx
- ┣ 📂meal
- ┃ ┗ 📜page.tsx
- ┣ 📂medical
- ┃ ┗ 📜page.tsx
- ┣ 📂mypage
- ┃ ┗ 📜page.tsx
- ┣ 📂protected
- ┃ ┗ 📜page.tsx
- ┣ 📂sign
- ┃ ┣ 📂signIn
- ┃ ┃ ┣ 📜page.tsx
- ┃ ┃ ┗ 📜submit-button.tsx
- ┃ ┗ 📂signUp
- ┃ ┃ ┗ 📜page.tsx
- ┣ 📂trade
- ┃ ┣ 📂detail
- ┃ ┃ ┗ 📂[id]
- ┃ ┃ ┃ ┣ 📂edit
- ┃ ┃ ┃ ┃ ┗ 📜page.tsx
- ┃ ┃ ┃ ┗ 📜page.tsx
- ┃ ┣ 📂post
- ┃ ┃ ┗ 📜page.tsx
- ┃ ┗ 📜page.tsx
- ┣ 📂_api
- ┃ ┣ 📜comment-api.ts
- ┃ ┣ 📜detailPage-api.ts
- ┃ ┗ 📜placeInfo-api.ts
- ┣ 📂_components
- ┃ ┣ 📂communityPageComponents
- ┃ ┃ ┣ 📜CommumityData.tsx
- ┃ ┃ ┣ 📜CommunityCommentsData.tsx
- ┃ ┃ ┣ 📜CommunityEditForm.tsx
- ┃ ┃ ┗ 📜CommunityForm.tsx
- ┃ ┣ 📂detailPageComponents
- ┃ ┃ ┣ 📜CommentDeleteButton.tsx
- ┃ ┃ ┣ 📜CommentForm.tsx
- ┃ ┃ ┣ 📜CommentItem.tsx
- ┃ ┃ ┣ 📜CommentList.tsx
- ┃ ┃ ┣ 📜LikeButton.tsx
- ┃ ┃ ┣ 📜PostEditDeleteButton.tsx
- ┃ ┃ ┣ 📜SaveButton.tsx
- ┃ ┃ ┗ 📜ScrapButton.tsx
- ┃ ┣ 📂layout
- ┃ ┃ ┣ 📜Footer.tsx
- ┃ ┃ ┣ 📜Header.tsx
- ┃ ┃ ┗ 📜Nav.tsx
- ┃ ┣ 📂mainPageComponents
- ┃ ┃ ┗ 📜test.tsx
- ┃ ┗ 📂tradePageComponents
- ┃ ┃ ┣ 📜TradeCommentData.tsx
- ┃ ┃ ┣ 📜TradeData.tsx
- ┃ ┃ ┣ 📜TradeEditForm.tsx
- ┃ ┃ ┗ 📜TradeForm.tsx
- ┣ 📂_hooks
- ┃ ┣ 📜useAddCommunityCommentMutation.ts
- ┃ ┣ 📜useAddTradeCommentMutation.ts
- ┃ ┣ 📜useDeleteCommunityCommentMutation.ts
- ┃ ┣ 📜useDeleteTradeCommentMutation.ts
- ┃ ┣ 📜useFetchCommunityCommentsQuery.ts
- ┃ ┣ 📜useFetchTradeCommentsQuery.ts
- ┃ ┣ 📜useUpdateCommunityCommentMutation.ts
- ┃ ┗ 📜useUpdateTradeCommentMutation.ts
- ┣ 📂_style
- ┃ ┗ 📜mainSwiper.css
- ┣ 📂_types
- ┃ ┣ 📜communityPosts.types.ts
- ┃ ┗ 📜mainPage.type.ts
- ┣ 📂_utils
- ┃ ┣ 📂supabase
- ┃ ┃ ┣ 📜api.ts
- ┃ ┃ ┣ 📜auth.ts
- ┃ ┃ ┣ 📜client.ts
- ┃ ┃ ┣ 📜clientJs.ts
- ┃ ┃ ┣ 📜createClientJs.ts
- ┃ ┃ ┣ 📜middleware.ts
- ┃ ┃ ┗ 📜server.ts
- ┃ ┗ 📜date.ts
- ┣ 📜actions.ts
- ┣ 📜favicon.ico
- ┣ 📜globals.css
- ┣ 📜layout.tsx
- ┣ 📜not-found.tsx
- ┣ 📜page.tsx
- ┗ 📜provider.tsx
- -->
