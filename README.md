@@ -54,6 +54,7 @@ Communication
     <th>Github</th>
     <th>Slack</th>
     <th>Figma</th>
+    <th>ZEP</th>
   </tr>
   <tr>
     <td width="100" height="100">
@@ -70,6 +71,12 @@ Communication
       <div style="display: flex; align-items:center; justify-content:center;">
         &nbsp;&nbsp;
         <img src="https://github.com/sparta-advancedProject-team10/HappyMungLife/assets/116704646/867feb77-319b-497f-9836-07abb6637596" alt="icon" width="45" text-align="center">
+      </div>
+    </td>
+     <td width="100" height="100">
+      <div style="display: flex; align-items:center; justify-content:center;">
+        &nbsp;&nbsp;
+        <img src="https://github.com/user-attachments/assets/09e371f7-81eb-49f7-9443-a5c2bc357734" alt="icon" width="50" text-align="center">
       </div>
     </td>
   </tr>
