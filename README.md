@@ -329,8 +329,8 @@ Communication
     <th>페이지 및 기능</th>
     <th>설명</th>
   </tr>
-  <tr align="center">
-    <td>Intro 페이지</td>
+  <tr>
+    <td align="center">Intro 페이지</td>
     <td>
       <img src="https://github.com/user-attachments/assets/ca0beb74-0da4-4e38-a89c-5ab093fdc210" alt="intro page">
     </td>
@@ -340,8 +340,8 @@ Communication
       - Video 로딩 전 이미지 삽입 <br>
     </td>
   </tr>
-  <tr align="center">
-    <td>메인 페이지</td>
+  <tr>
+    <td align="center">메인 페이지</td>
     <td>
       <img src="https://github.com/user-attachments/assets/4b12a07c-5c91-4bab-9ba9-cffc877ae52f" alt="main page"> <br>
       <img src="https://github.com/user-attachments/assets/de147326-1a28-4e15-a17a-9f9f7828c731" alt="main page"> <br>
@@ -350,14 +350,14 @@ Communication
     <td>
       - 방 리스트 검색 <br>
       - GoTopButton 페이지 최상단 이동 <br>
-      - TypeBot : IceCraft에 대한 QnA설명 <br>
-      - Loading UI : 방 입장 전 loading UI <br>
-      - 실시간 방 리스트 : 양방향 통신으로 실시간 방 정보 <br>
-      - 공지사항 모달 : 하루 창 닫기 모달
+      - TypeBot을 추가하여 QnA설명 <br>
+      - 방 입장 전 Loading UI <br>
+      - 양방향 통신으로 실시간 방 정보 리스트 구현<br>
+      - 공지사항 하루 창 닫기 모달창 구현 <br>
     </td>
   </tr>
-  <tr align="center">
-    <td>로그인 페이지</td>
+  <tr>
+    <td align="center">로그인 페이지</td>
     <td>
         <img src="https://github.com/user-attachments/assets/764a7ae7-5dc3-4e61-9794-8cab3e0468b8" alt="login page">
     </td>
@@ -367,8 +367,8 @@ Communication
       - 이메일 저장 기능 <br>
     </td>
   </tr>
-  <tr align="center">
-    <td>회원가입 페이지</td>
+  <tr>
+    <td align="center">회원가입 페이지</td>
     <td>
         <img src="https://github.com/user-attachments/assets/8ac43af8-9ef9-4933-b9f2-cebb46d9bb73" alt="register page">
     </td>
@@ -379,7 +379,7 @@ Communication
     </td>
   </tr>
   <tr>
-    <td>랭킹 페이지</td>
+    <td align="center">랭킹 페이지</td>
     <td>
        <img src="https://github.com/user-attachments/assets/a2916a58-7dd8-4cd5-af9b-30b6845bec36" alt="ranking page">
     </td>
@@ -389,8 +389,8 @@ Communication
       - 내 닉네임 리스트 최상위 표시 <br>
     </td>
   </tr>
-  <tr align="center">
-    <td>마피아 설명 페이지</td>
+  <tr>
+    <td align="center">마피아 설명 페이지</td>
     <td>
        <img src="https://github.com/user-attachments/assets/4a46b2b2-6c48-4c38-8c7d-0f610d686be4" alt="mafia info page">
     </td>
@@ -398,8 +398,8 @@ Communication
       - 마피아 게임 페이지 설명 <br>
     </td>
   </tr>
-  <tr align="center">
-    <td>QnA 페이지</td>
+  <tr>
+    <td align="center">QnA 페이지</td>
     <td>
          <img src="https://github.com/user-attachments/assets/940a7d25-db2e-4bd3-87c2-ff0ba8fc5f3a" alt="qna page">
     </td>
@@ -407,8 +407,8 @@ Communication
       - 유저가 문의 시 관리자 메일로 전송 <br>
     </td>
   </tr>
-  <tr align="center">
-    <td>not-found 페이지</td>
+  <tr>
+    <td align="center">not-found 페이지</td>
     <td>
          <img src="https://github.com/user-attachments/assets/0e4aae62-8f0f-4561-b9f2-b58b1a2a0c32" alt="not-found page" width="600">
          <img src="https://github.com/user-attachments/assets/129e3b04-9c9b-4ef6-8be5-673fa05eb11b" alt="not-found page" width="600">
@@ -418,8 +418,8 @@ Communication
       - 사용자가 캠,마이크 비활성화 시 메인페이지로 유도 <br>
     </td>
   </tr>
-  <tr align="center">
-    <td>마피아 게임 페이지</td>
+  <tr>
+    <td align="center">마피아 게임 페이지</td>
     <td>이미지</td>
     <td>설명</td>
   </tr>
