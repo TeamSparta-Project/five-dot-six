@@ -32,11 +32,23 @@
 
 
 ## 핵심 기능
-`메인페이지`, `게임 페이지` : socket.io를 사용한 양방향 통신 구현 <br>
 
-`방 목록 검색` : Debounce를 사용한 방 목록 검색 가능 <br>
+`메인페이지` <br>
+- 방 리스트 검색 : Debounce를 사용한 방 목록 검색 가능 <br>
+- 실시간 방 리스트 : 게임 현재 인원수, 총 인원수, 방 리스트를 실시간으로 볼 수 있는 기능 <br>
+- 메인 슬라이드 : 다양한 게임의 설명과 게임 시작 옵션을 슬라이드 형식으로 제공하여 사용자 UI/UX 향상 <br>
+- TypeBot : IceCraft에 대한 설명을 볼 수 있는 기능 <br>
+- Loading UI : 데이터를 불러오기 전, loading UI를 표시하여 UI/UX 향상 <br>
 
-`반응형 웹` : 전체 웹페이지 반응형 구현 <br>
+`랭킹페이지` <br>
+- 내 닉네임 보기 : 모든 user의 랭킹 리스트 중, 자신의 랭킹의 정보를 상단에 고정
+- 페이지네이션 : 10명 단위로 페이지네이션 기능으로 긴 목록을 스크롤하는 부담을 줄임
+
+`마피아 게임 페이지` <br>
+- 오디오 & 캠 설정 : 방 입장하기 전 미디어 장치를 설정
+- 닉네임 & 플레이어 번호 : 게임의 원활한 진행을 위해 각 Player의 닉네임 및 PlayerNumber를 부여
+- Loading UI : 메인페이지로 이동 시 DB에 적용되기 전 까지 빈 공백을 Loading UI로 표시하여 UI/UX 향상
+  
 
 
 
@@ -304,7 +316,7 @@ Communication
     <th>설명</th>
   </tr>
   <tr align="center">
-    <td>Intro</td>
+    <td>Intro 페이지</td>
     <td>
       <img src="https://github.com/user-attachments/assets/ca0beb74-0da4-4e38-a89c-5ab093fdc210" alt="intro page">
     </td>
@@ -335,45 +347,64 @@ Communication
     <td>
         <img src="https://github.com/user-attachments/assets/764a7ae7-5dc3-4e61-9794-8cab3e0468b8" alt="login page">
     </td>
-    <td>설명</td>
+    <td>
+      - 이메일, 비밀번호 입력 유효성 검사 <br>
+      - SNS 로그인 <br>
+      - 이메일 저장 기능 <br>
+    </td>
   </tr>
   <tr align="center">
     <td>회원가입 페이지</td>
     <td>
         <img src="https://github.com/user-attachments/assets/8ac43af8-9ef9-4933-b9f2-cebb46d9bb73" alt="register page">
     </td>
-    <td>설명</td>
+    <td>
+      - 이메일, 닉네임, 비밀번호 입력 유효성 검사 <br>
+      - 닉네임 중복확인 검사 <br>
+      - SNS 로그인 <br>
+    </td>
   </tr>
   <tr>
     <td>랭킹 페이지</td>
     <td>
        <img src="https://github.com/user-attachments/assets/a2916a58-7dd8-4cd5-af9b-30b6845bec36" alt="ranking page">
     </td>
-    <td>설명</td>
+    <td>
+      - 30분 마다 데이터 갱신 (ISR) <br>
+      - 10명씩 Pagenation 다음페이지로 이동 <br>
+      - 내 닉네임 리스트 최상위 표시 <br>
+    </td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>마피아 설명 페이지</td>
     <td>
        <img src="https://github.com/user-attachments/assets/4a46b2b2-6c48-4c38-8c7d-0f610d686be4" alt="mafia info page">
     </td>
-    <td>설명</td>
+    <td>
+      - 마피아 게임 페이지 설명 <br>
+    </td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>QnA 페이지</td>
     <td>
          <img src="https://github.com/user-attachments/assets/940a7d25-db2e-4bd3-87c2-ff0ba8fc5f3a" alt="qna page">
     </td>
-    <td>설명</td>
+    <td>
+      - 유저가 문의 시 관리자 메일로 전송 <br>
+    </td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>not-found 페이지</td>
     <td>
-         <img src="https://github.com/user-attachments/assets/0e4aae62-8f0f-4561-b9f2-b58b1a2a0c32" alt="not-found page">
-         <img src="https://github.com/user-attachments/assets/129e3b04-9c9b-4ef6-8be5-673fa05eb11b" alt="not-found page">
+         <img src="https://github.com/user-attachments/assets/0e4aae62-8f0f-4561-b9f2-b58b1a2a0c32" alt="not-found page" width="600">
+         <img src="https://github.com/user-attachments/assets/129e3b04-9c9b-4ef6-8be5-673fa05eb11b" alt="not-found page" width="600">
     </td>
-    <td>설명</td>
+    <td>
+      - 잘못된 url 경로 접속 시 메인페이지로 유도 <br>
+      - 사용자가 캠,마이크 비활성화 시 메인페이지로 유도 <br>
+    </td>
   </tr>
-    <tr>
+  <tr align="center">
     <td>마피아 게임 페이지</td>
     <td>이미지</td>
     <td>설명</td>
