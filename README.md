@@ -309,14 +309,18 @@ Communication
       <img src="https://github.com/user-attachments/assets/ca0beb74-0da4-4e38-a89c-5ab093fdc210" alt="intro page">
     </td>
     <td>
-      - video 삽입 <br>
+      - Video 삽입 <br>
       - TextTyping으로 UX경험 향상 <br>
-      - video 로딩 전 이미지 삽입 <br>
+      - Video 로딩 전 이미지 삽입 <br>
     </td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>메인 페이지</td>
-    <td>이미지</td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/4b12a07c-5c91-4bab-9ba9-cffc877ae52f" alt="main page"> <br>
+      <img src="https://github.com/user-attachments/assets/de147326-1a28-4e15-a17a-9f9f7828c731" alt="main page"> <br>
+      <img src="https://github.com/user-attachments/assets/9b0f73fc-22d2-40ba-ab2f-6870ba712d43" alt="main page">
+    </td>
     <td>
       - 방 리스트 검색 <br>
       - GoTopButton 페이지 최상단 이동 <br>
@@ -326,14 +330,18 @@ Communication
       - 공지사항 모달 : 하루 창 닫기 모달
     </td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>로그인 페이지</td>
-    <td>이미지</td>
+    <td>
+        <img src="https://github.com/user-attachments/assets/764a7ae7-5dc3-4e61-9794-8cab3e0468b8" alt="login page">
+    </td>
     <td>설명</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>회원가입 페이지</td>
-    <td>이미지</td>
+    <td>
+        <img src="https://github.com/user-attachments/assets/8ac43af8-9ef9-4933-b9f2-cebb46d9bb73" alt="register page">
+    </td>
     <td>설명</td>
   </tr>
   <tr>
