@@ -84,6 +84,7 @@ Communication
 <table>
   <tr>
     <th>Next.js</th>
+    <th>TypeScript</th>
     <th>Supabase</th>
     <th>Prettier</th>
     <th>Moudle css</th>
@@ -99,8 +100,12 @@ Communication
         &nbsp;&nbsp;<img src="https://github.com/sparta-advancedProject-team10/HappyMungLife/assets/116704646/ca3b35d4-25bf-4038-9a33-2daf9e6c5ade" alt="icon" width="50" height="50" style="text-align:center" />
       </div>
     </td>
+       <td width="100" height="100">
+ <div style="display: flex; align-items: flex-start;">&nbsp;<img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" /></div>
+    </td>
      <td width="100" height="100">
       <div style="display: flex; align-items: center;">
+        &nbsp;
         <img src="https://github.com/sparta-advancedProject-team10/HappyMungLife/assets/121484282/81b31829-810a-4653-b54e-2fc9a3d98ad0" alt="icon" width="65" height="65" />
       </div>     
     </td>
