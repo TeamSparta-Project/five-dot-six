@@ -373,8 +373,8 @@ Communication
         <img src="https://github.com/user-attachments/assets/8ac43af8-9ef9-4933-b9f2-cebb46d9bb73" alt="register page">
     </td>
     <td>
-      - 이메일, 닉네임, 비밀번호 입력 유효성 검사 <br>
-      - 닉네임 중복확인 검사 <br>
+      - 이메일, 비밀번호 입력 유효성 검사 <br>
+      - 이메일 중복확인 검사 <br>
       - SNS 로그인 <br>
     </td>
   </tr>
