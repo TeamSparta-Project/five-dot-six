@@ -303,9 +303,11 @@ Communication
     <th>페이지 및 기능</th>
     <th>설명</th>
   </tr>
-  <tr>
+  <tr align="center">
     <td>Intro</td>
-    <td>이미지</td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/ca0beb74-0da4-4e38-a89c-5ab093fdc210" alt="intro page">
+    </td>
     <td>
       - video 삽입 <br>
       - TextTyping으로 UX경험 향상 <br>
