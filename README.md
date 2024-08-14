@@ -106,7 +106,7 @@ Communication
     <th>TypeScript</th>
     <th>Supabase</th>
     <th>Prettier</th>
-    <th>Moudle css</th>
+    <th>Module css</th>
     <th>Zustand</th>
   </tr>
   <tr>
