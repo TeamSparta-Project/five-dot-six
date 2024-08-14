@@ -422,8 +422,18 @@ Communication
   </tr>
   <tr>
     <td align="center">마피아 게임 페이지</td>
-    <td>이미지</td>
-    <td>설명</td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/143d1a76-e05b-4195-86e9-1f9e27fcfbd9" alt="mafia game page" width="600">
+      <img src="https://github.com/user-attachments/assets/6083bda6-07aa-4912-a95c-9325741a7def" alt="mafia game page" width="600">
+      <img src="https://github.com/user-attachments/assets/e8f45396-e548-4b64-abd9-9f3490be2af1" alt="mafia game page" width="600">
+      <img src="https://github.com/user-attachments/assets/8fef94c4-b82f-49c1-9610-ccdc0f7f2c27" alt="mafia game page" width="600">
+    </td>
+    <td>
+      - 실시간으로 플레이어들의 ready 여부를 알 수 있습니다. <br>
+      - 방장이 게임 시작 버튼을 누르면 게임이 시작 됩니다  <br>
+      - 밤과 낮으로 진입 시 배경화면이 변경 됩니다. <br>
+      - 게임이 끝나면 폭죽효과와 함께 승리자 닉네임이 표시되며, 게임이 종료됩니다  <br>
+    </td>
   </tr>
 </table>
 
