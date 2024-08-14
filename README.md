@@ -245,33 +245,35 @@ Communication
      <td align="center">
       <br>
       <strong><em>** 마피아 게임 페이지 (Server) **</em></strong> <br> 
-      마피아 게임 알고리즘 전체 구현 <br>
-      Web socket 통신 구현 작업 <br>
-      socket.io 양방향 통신 구현 <br>
-      Express 연결 및 Server 배포 작업 <br>
-      AWS EC2 배포 작업<br>
-      Web socket 통신 구현 작업<br>    
+      Express.js - 마피아의 게임 서버 <br>
+      Socket.io - 클라이언트와의 양방향 통신을 통해 게임을 진행 <br>
+Supabase - 게임 방 및 게임 진행에 필요한 DB 설계 및 api 구현 <br>
+Nodemon - 서버 개발의 편의성을 위해 nodemon을 사용 <br>
+PM2 - 서버의 안정성과 성능 향상을 위해 PM2를 이용하여 서버 구동 <br>
+AWS - 서버를 배포하기 위한 플랫폼으로 AWS를 선택 <br>
+사용자의 방 생성, 입장, 탈퇴 등 게임 방에 관련된 기능 구현 <br>
+마피아 게임 전체 알고리즘 구현 <br>
       <br>
       <strong><em>** Front-End **</em></strong> <br> 
-      Supabase 전체 DB설계 및 api통신 구현 <br>
+    Supabase DB 설계 및 api 구현 <br>
+sns 사이트 auth 설정<br>
       <br>
       <strong><em>** 로그인 페이지 **</em></strong> <br> 
-      로그인 페이지 구현<br><br>
-      [일반 로그인]<br>
-      Id와 Password를 Supabase에 저장된 데이터와 비교하여 판단 후 로그인 기술 구현<br>
-      Form Validation 이용한 유효성 검사 <br> 
-      이메일 저장 폼 <br>
+   Supabase - supabase의 auth 기능을 통해 로그인 처리 <br>
+유효성 검사 - id와 password를 Supabase에 저장된 데이터와 비교<br>
+react-cookie - 리액트 쿠키 라이브러리를 통해서 일정 기간 동안 이메일을 쿠키에 저장<br>
+supabase와 각 sns 사이트의 auth 기능을 통해 sns 계정으로 로그인이 가능하도록 구현<br>
       <br>
       <strong><em>** 회원가입 페이지 **</em></strong> <br> 
-      회원가입 페이지 구현 <br><br>
-      [일반 회원가입]<br>
-      유저의 계정 정보를 입력받아 Form Validation Check를 이용한 회원가입 구현<br>
-      Supabase에 있는 계정 데이터 테이블 참조 및 정규식을 통한 패턴 검사<br>
-      유저가 회원가입 후 Supabase에 있는 계정 테이블에 계정 등록 작업<br>
+Supabase - supbase의 계정 테이블에 유저의 계정을 저장, 입력한 이메일의 가입 중복 여부 확인<br> 
+유효성 검사 - 유저가 입력한 계정 정보가 회원가입에 적합한지 확인<br> 
+실시간 피드백 - 유저가 타이핑하는 정보를 실시간으로 검사하여 회원 가입 가능 여부를 알림<br> 
+정규식 - 정규식을 통해 유저가 입력한 이메일과 비밀번호의 패턴을 분석하여 회원 가입 가능 여부 검사<br> 
+supabase와 각 sns 사이트의 auth 기능을 통해 sns 계정으로 회원 가입이 가능하도록 구현<br> 
       <br>
-      [SNS 회원가입]<br>
-      SNS 사이트의 계정 등록 구현 <br>
-      Supabase와 각 SNS사이트의 auth 기능을 통하여 회원가입 처리 구현 <br>
+        <strong><em>** 랭킹 페이지 **</em></strong> <br> 
+supabase api를 랭킹 페이지에 적용<br> 
+유저의 랭킹을 정하는 알고리즘 구현<br> 
       <br>
     </td>
   </tr>
