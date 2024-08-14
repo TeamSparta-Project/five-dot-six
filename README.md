@@ -151,7 +151,7 @@ Communication
   <tr>
     <th>Livekit</th>
     <th>Socket.io</th>
-    <th>Express</th>
+    <th>Express.js</th>
     <th>AWS</th>
   </tr>
   <tr>
