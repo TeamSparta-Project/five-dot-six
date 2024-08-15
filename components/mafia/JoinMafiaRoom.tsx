@@ -82,6 +82,7 @@ const JoinMafiaRoom = () => {
 
   //NOTE - 에러 이벤트 핸들러(로그인, 토큰, 방입장 등)
   const joinErrorHandler = (error: Error | string | unknown) => {
+    console.log("error", error);
     setIsMediaError(true);
   };
 
@@ -152,7 +153,10 @@ const JoinMafiaRoom = () => {
           <h2>오디오 & 캠 설정 창 입니다.</h2>
           <div className={S.settingCam}>
             <PreJoin
-              onError={joinErrorHandler}
+              onError={(error) => {
+                joinErrorHandler;
+                console.log(error);
+              }}
               joinLabel="입장하기"
               onSubmit={joinRoomHandler}
               onValidate={() => !isMediaError || !isTokenError}
