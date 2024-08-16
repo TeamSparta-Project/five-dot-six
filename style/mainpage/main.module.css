@@ -57,6 +57,7 @@ body.active {
   transform: translateY(-55%);
   width: 25px;
   height: 25px;
+  display: none;
 }
 
 .roomSearch label {
@@ -70,6 +71,10 @@ body.active {
 .roomSearch input[type="text"]:focus {
   outline: 1px solid var(--primary-color);
   opacity: 0.5;
+}
+
+.roomSearch input:focus + button {
+  display: block;
 }
 
 .MainGnb {
