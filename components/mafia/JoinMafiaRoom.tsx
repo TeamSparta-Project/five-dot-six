@@ -111,7 +111,7 @@ const JoinMafiaRoom = () => {
   //NOTE - 미디어 권한 에러 UI
   if (isMediaError) {
     return (
-      <section className={Style.mainSection}>
+      <section className={`${Style.mainSection} ${Style.mediaInfoCheck}`}>
         <Image
           className={Style.mediaInfoImage}
           src={MediaError}
@@ -129,6 +129,31 @@ const JoinMafiaRoom = () => {
         >
           메인페이지로 이동하기
         </button>
+        <div className={Style.settingCheck}>
+          <h2>잘못 설정했을 때 진입 시 아래의 사항을 체크해주세요!</h2>
+          <ul className={Style.settingCheckList}>
+            <li>설정 &gt; 비디오&#47;오디오 설정을 체크</li>
+            <li>타 플랫폼 비디오 실행 시 비디오가 활성화 안될 수 있습니다.</li>
+            <li>이용 브라우저, 앱 최신 업데이트</li>
+            <li>
+              <h3>OS 내 카메라&#47;마이크 설정 확인</h3>
+              <div>
+                <p>
+                  Windows 설정 &#62; 개인 정보 및 보안 &#62; 앱 사용 권한 - 카메라&#47;마이크 &#62; 앱에서 액세스하도록
+                  허용 &#62; 데스크톱앱이 카메라/마이크에 액세스하도록 허용 &#62; 켬 &#62; 브라우저 새로고침
+                </p>
+                <p>
+                  Mac 설정 &#62; Apple 메뉴 &#62; 시스템 설정 &#62; 개인정보 보호 및 보안 &#62; 화면 기록 선택 &#62;
+                  Chrome을 찾고 토글을 켜 화면 기록을 허용
+                </p>
+              </div>
+            </li>
+            <li>
+              실행 중인 다른 프로그램이 제한하는 경우 &#58; 바이러스 검사 소프트웨어&#40;백신&#41;, 방화벽&#40;VPN&#41;
+              등이 이용을 제한할 수 있으니 종료&#47;비활성화 후 진행해 보시길 바랍니다.
+            </li>
+          </ul>
+        </div>
       </section>
     );
   }

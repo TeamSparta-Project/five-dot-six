@@ -58,6 +58,7 @@ body.active {
   width: 25px;
   height: 25px;
   display: none;
+  pointer-events: none;
 }
 
 .roomSearch label {
