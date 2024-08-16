@@ -125,6 +125,52 @@
   resolved "https://registry.npmjs.org/@bufbuild/protobuf/-/protobuf-1.9.0.tgz"
   integrity sha512-W7gp8Q/v1NlCZLsv8pQ3Y0uCu/SHgXOVFK+eUluUKWXmsb6VHkpNx0apdOWWcDbB9sJoKeP8uPrjmehJz6xETQ==
 
+"@cloudinary-util/types@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/types/-/types-1.2.0.tgz#c67ee4c4948236327872239165bf798eeeb899c5"
+  integrity sha512-2Mo5juB1HV+GmVLq2+bU0Yg5FB6r+csbHyDN6njc0AqkEkp+AW+Q6kYbbTYkT7zk3x9tBWfKn3lfR7wUCwowJw==
+
+"@cloudinary-util/types@1.2.0-beta.1":
+  version "1.2.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/types/-/types-1.2.0-beta.1.tgz#ba3461e97a26ba8d9d0d733dd983f504a3db0303"
+  integrity sha512-zdMPqadGhRWwSZQcgsUoouJhr2Dnpc4p1ytGLtnEmVFNvwDhYMR6ER3xLP5FoSNzPx10SoWfNl6UWQKInkk+iQ==
+
+"@cloudinary-util/url-loader@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-5.6.0.tgz#778c9b09faa02edd19702e742c931ce9927a7790"
+  integrity sha512-oWTXaaBralKLfk9tD2fWaTfwflx9Acug6L3GO72sLPxIssg+SyeNDiIrNwIFRx6SkFR74bWWNqjp2yu135gaDQ==
+  dependencies:
+    "@cloudinary-util/types" "1.2.0-beta.1"
+    "@cloudinary-util/util" "3.2.0"
+    "@cloudinary/url-gen" "1.15.0"
+    zod "^3.22.4"
+
+"@cloudinary-util/util@3.2.0", "@cloudinary-util/util@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/util/-/util-3.2.0.tgz#cdfb15ca0f04063203109ffbf3a5bc6de7f94c2b"
+  integrity sha512-VJBqAT3W0HQ9kyMagv+EzXkM/VYR9Ks01ewGxsS8T8b2N0NZFPAhYKeU2H9fOXSl6BVrD6aVYjJZAoT8pfQIyA==
+
+"@cloudinary/transformation-builder-sdk@^1.10.0", "@cloudinary/transformation-builder-sdk@^1.14.0":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.14.1.tgz#aa2a75b1c04ddba84f92d2ac3ce29d29a8c1cbca"
+  integrity sha512-z49To4r3byg7zHsOGKsw/nHef5B9W3wSBdDsGoY7JOj75kbvmSlP4MCkS0JU3Bv57EvYYw5ymalPz+bvRXmPlA==
+  dependencies:
+    "@cloudinary/url-gen" "^1.7.0"
+
+"@cloudinary/url-gen@1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/url-gen/-/url-gen-1.15.0.tgz#a55c9b51cb27301e0bdc4d60e44a7e73d13db103"
+  integrity sha512-bjU67eZxLUgoRy/Plli4TQio7q6P31OYqnEgXxeN9TKXrzr6h0DeEdIUhKI9gy3HkEBWXWWJIPh7j7gkOJPnyA==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.10.0"
+
+"@cloudinary/url-gen@^1.7.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/url-gen/-/url-gen-1.20.0.tgz#1b4c2433fda9d14a515ba6582d10243b9fc64ad9"
+  integrity sha512-SWtxDOZeROocIYhubtlrSvKlf1H7wBeVaIWqOOvz8TxbHvMLZanRHyNUv8YSxIsrzrjkLk1sI0Q2fr+6FkcqzA==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.14.0"
+
 "@emnapi/runtime@^1.1.1":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.2.0.tgz#71d018546c3a91f3b51106530edbc056b9f2f2e3"
@@ -568,6 +614,11 @@
   integrity sha512-iv/W0Axc4aXhFzkrByToE1JQqayxTPNotCoSCnarR/A1vDIHaoKpg7FTIfP3Ev2mbKn1yrxq0ZKYUdLEJxs6Tg==
   dependencies:
     "@tanstack/query-core" "5.40.0"
+
+"@tsconfig/recommended@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@tsconfig/recommended/-/recommended-1.0.7.tgz#fdd95fc2c8d643c8b4a8ca45fd68eea248512407"
+  integrity sha512-xiNMgCuoy4mCL4JTywk9XFs5xpRUcKxtWEcMR6FNMtsgewYTIgIR+nvlP4A4iRCAzRsHMnPhvTRrzp4AGcRTEA==
 
 "@typebot.io/js@^0.3.6":
   version "0.3.6"
@@ -2657,6 +2708,16 @@ nanoid@^3.3.6, nanoid@^3.3.7:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
 
+next-cloudinary@^6.10.0:
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/next-cloudinary/-/next-cloudinary-6.10.0.tgz#e40272dc850d8c8445b8c6525b63390e5439ef48"
+  integrity sha512-iGKg4bPAkGjrWQDovbqQJVb3VPzj6TESgEk46D+dS3cVaFJqnVjwGtGlK9wLA/KX7lhZinvnHvouufuiL7f9ig==
+  dependencies:
+    "@cloudinary-util/types" "1.2.0"
+    "@cloudinary-util/url-loader" "5.6.0"
+    "@cloudinary-util/util" "^3.2.0"
+    "@tsconfig/recommended" "^1.0.7"
+
 next@latest:
   version "14.1.4"
   resolved "https://registry.npmjs.org/next/-/next-14.1.4.tgz"
@@ -3112,16 +3173,7 @@ streamsearch@^1.1.0:
   resolved "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz"
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
-"string-width-cjs@npm:string-width@^4.2.0":
-  version "4.2.3"
-  resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
-  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
-  dependencies:
-    emoji-regex "^8.0.0"
-    is-fullwidth-code-point "^3.0.0"
-    strip-ansi "^6.0.1"
-
-string-width@^4.1.0:
+"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
   version "4.2.3"
   resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -3139,14 +3191,7 @@ string-width@^5.0.1, string-width@^5.1.2:
     emoji-regex "^9.2.2"
     strip-ansi "^7.0.1"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz"
-  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
-  dependencies:
-    ansi-regex "^5.0.1"
-
-strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -3410,6 +3455,11 @@ yarn@^1.22.22:
   version "1.22.22"
   resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz"
   integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
+
+zod@^3.22.4:
+  version "3.23.8"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
+  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
 
 zustand-x@^3.0.1:
   version "3.0.4"
