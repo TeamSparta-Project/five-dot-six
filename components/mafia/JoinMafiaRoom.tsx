@@ -8,12 +8,13 @@ import { getToken } from "@/utils/livekit/liveKitApi";
 import { socket } from "@/utils/socket/socket";
 import { LiveKitRoom, PreJoin } from "@livekit/components-react";
 import "@livekit/components-styles";
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import { useCallback, useEffect, useState } from "react";
 import MediaError from "@/assets/images/media_error.svg";
 import SorryImage from "@/assets/images/sorry_image.avif";
 import Image from "next/image";
 import { checkUserLogIn } from "@/utils/supabase/authAPI";
+import { MediaDeviceFailure } from "livekit-client";
 
 const JoinMafiaRoom = () => {
   const roomId = useParams();
@@ -26,8 +27,10 @@ const JoinMafiaRoom = () => {
   const [isTokenError, setIsTokenError] = useState(false);
   const [isJoin, setIsJoin] = useState(false);
   const isPopState = usePopStateHandler();
-  const { setIsEntry } = useRoomAction();
   const { setIsReLoad } = useBeforeUnloadHandler();
+  const { setIsEntry } = useRoomAction();
+
+  const router = useRouter();
 
   //NOTE - 뒤로가기 시 작동
   useEffect(() => {
@@ -64,7 +67,7 @@ const JoinMafiaRoom = () => {
           setToken(token);
         }
       } catch (error) {
-        setIsTokenError(true);
+        joinErrorHandler(error);
       }
     };
 
@@ -83,6 +86,12 @@ const JoinMafiaRoom = () => {
   //NOTE - 에러 이벤트 핸들러(로그인, 토큰, 방입장 등)
   const joinErrorHandler = (error: Error | string | unknown) => {
     console.log("error", error);
+    setIsTokenError(true);
+  };
+
+  //NOTE - 에러 이벤트 핸들러(미디어 장치)
+  const mediaErrorHandler = (error: Error | MediaDeviceFailure | undefined) => {
+    console.log("error", error);
     setIsMediaError(true);
   };
 
@@ -99,6 +108,7 @@ const JoinMafiaRoom = () => {
         <button
           onClick={() => {
             socket.emit("exitRoom", roomId.id, userInfo.userId);
+            router.back();
             setIsEntry(false);
           }}
         >
@@ -124,6 +134,7 @@ const JoinMafiaRoom = () => {
         <button
           onClick={() => {
             socket.emit("exitRoom", roomId.id, userInfo.userId);
+            router.back();
             setIsEntry(false);
           }}
         >
@@ -165,10 +176,11 @@ const JoinMafiaRoom = () => {
           <LiveKitRoom
             token={token}
             serverUrl={process.env.NEXT_PUBLIC_LIVEKIT_URL}
+            connect={true}
             video={true}
             audio={true}
             onError={joinErrorHandler}
-            connect={true}
+            onMediaDeviceFailure={(mediaError) => mediaErrorHandler(mediaError)}
           >
             <MafiaPlayRooms />
           </LiveKitRoom>
@@ -178,13 +190,10 @@ const JoinMafiaRoom = () => {
           <h2>오디오 & 캠 설정 창 입니다.</h2>
           <div className={S.settingCam}>
             <PreJoin
-              onError={(error) => {
-                joinErrorHandler;
-                console.log(error);
-              }}
               joinLabel="입장하기"
               onSubmit={joinRoomHandler}
               onValidate={() => !isMediaError || !isTokenError}
+              onError={mediaErrorHandler}
             ></PreJoin>
             <div className={S.settingUserButton}>
               <ul>
