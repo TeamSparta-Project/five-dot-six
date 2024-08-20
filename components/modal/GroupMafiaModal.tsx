@@ -4,6 +4,7 @@ import ModalProgress from "@/utils/ModalProgress";
 
 const GroupMafiaModal = () => {
   const title = useGroupModalElement();
+  const gunsound = [];
 
   return (
     <>
