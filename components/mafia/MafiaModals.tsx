@@ -27,6 +27,7 @@ const MafiaModals = () => {
         setTimer(timer);
         return;
       }
+
       if (title.includes("아침")) {
         setIsDay("낮");
       }

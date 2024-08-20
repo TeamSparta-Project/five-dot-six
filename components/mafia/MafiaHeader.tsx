@@ -12,9 +12,11 @@ import { useEffect, useState } from "react";
 
 const MafiaHeader = () => {
   //NOTE - livekit Hooks
-  const { localParticipant } = useLocalParticipant();
-  const roomId = localParticipant.metadata;
-  const userId = localParticipant.identity;
+  const localParticipant = useLocalParticipant();
+  const roomId = localParticipant.localParticipant.metadata;
+  const userId = localParticipant.localParticipant.identity;
+  const isLocalCamera = localParticipant.isCameraEnabled;
+  const isLocalMicePhone = localParticipant.isMicrophoneEnabled;
 
   //NOTE - global state
   const isGameState = useGameState();
@@ -39,6 +41,20 @@ const MafiaHeader = () => {
     router.back();
     setIsEntry(false);
   };
+
+  //NOTE - 방 입장 후 미디어 비활성화할 시 강제퇴장
+  useEffect(() => {
+    // 초기 렌더링
+    if (!localParticipant.cameraTrack || !localParticipant.microphoneTrack) {
+      return;
+    }
+
+    if (!isLocalCamera || !isLocalMicePhone) {
+      socket.emit("exitRoom", roomId, userId);
+      router.back();
+      setIsEntry(false);
+    }
+  }, [isLocalCamera, isLocalMicePhone]);
 
   //NOTE - 밤, 낮 배경
   useEffect(() => {

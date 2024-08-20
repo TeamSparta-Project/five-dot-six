@@ -87,7 +87,7 @@ const MafiaPlayRooms = () => {
       });
     },
     //NOTE - Error 처리
-    playError: (roomName: string, error: string) => {
+    playError: () => {
       setOverlayReset(); //Local,Remote 클릭 이벤트 및 캠 이미지 초기화
       setModalReset(); //전체 모달 요소 초기화
       setGameReset(); // 죽은 players 및 게임 state 초기화
