@@ -90,10 +90,10 @@ const JoinMafiaRoom = () => {
   };
 
   //NOTE - 에러 이벤트 핸들러(미디어 장치)
-  const mediaErrorHandler = (error: Error | MediaDeviceFailure | undefined) => {
+  const mediaErrorHandler = useCallback((error: Error | MediaDeviceFailure | undefined) => {
     console.log("error", error);
     setIsMediaError(true);
-  };
+  }, []);
 
   //NOTE - 토큰 에러 UI
   if (isTokenError) {
