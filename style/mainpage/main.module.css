@@ -57,7 +57,6 @@ body.active {
   transform: translateY(-55%);
   width: 25px;
   height: 25px;
-  display: none;
   pointer-events: none;
 }
 
@@ -75,7 +74,7 @@ body.active {
 }
 
 .roomSearch input:focus + button {
-  display: block;
+  display: none;
 }
 
 .MainGnb {
