@@ -29,7 +29,7 @@ const IntroPage = async () => {
         <Image src={IntroBg} alt="ice craft" className={S.IntroImage} priority />
         <video
           className={S.video}
-          src="https://ktfrmyssyzqmoljohixh.supabase.co/storage/v1/object/public/vedio/intro.mp4"
+          src=" https://res.cloudinary.com/dknj7kdek/video/upload/v1723811735/mvcfkvewapiy0sbc7wxx.mp4"
           muted
           autoPlay
           loop
